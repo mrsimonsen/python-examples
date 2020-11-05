@@ -11,6 +11,5 @@ low = -len(word)
 
 for i in range(10):
     position = random.randrange(low, high)
-    print("word[", position, "]\t", word[position])
+    print(f"word[{position}] \t{word[position]}")
 
-input("\n\nPress the enter key to exit.")

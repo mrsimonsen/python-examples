@@ -11,5 +11,4 @@ if money:
 else:
     print("Please, sit.  It may be a while.")
 
-input("\n\nPress the enter key to exit.")
 

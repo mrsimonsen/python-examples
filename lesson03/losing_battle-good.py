@@ -14,10 +14,9 @@ while health > 0:
     health -= damage
     
     print("Your hero swings and defeats an evil troll, " \
-          "but takes", damage, "damage points.\n")
+          f"but takes {damage} damage points.\n")
 
-print("Your hero fought valiantly and defeated", trolls, "trolls.")
+print(f"Your hero fought valiantly and defeated {trolls} trolls.")
 print("But alas, your hero is no more.")
 
-input("\n\nPress the enter key to exit.")
 

@@ -28,8 +28,5 @@ while start != "":
 
         finish = int(input("Finish: "))
 
-        print("word[", start, ":", finish, "] is", end=" ")
-        print(word[start:finish])
-  
-input("\n\nPress the enter key to exit.")
+        print(f"word[{start}:{finish}] is {word[start:finish]}")
 

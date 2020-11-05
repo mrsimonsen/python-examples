@@ -25,4 +25,3 @@ print("\nYour items:")
 for item in inventory:
     print(item)
 
-input("\n\nPress the enter key to exit.")

@@ -32,4 +32,3 @@ elif username == "guest" or password == "guest":
 else:
     print("Login failed.  You're not so exclusive.\n")
 
-input("\n\nPress the enter key to exit.")

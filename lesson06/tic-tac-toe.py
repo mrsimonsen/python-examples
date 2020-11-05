@@ -205,4 +205,4 @@ def main():
 
 # start the program
 main()
-input("\n\nPress the enter key to quit.")
+

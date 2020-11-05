@@ -20,13 +20,11 @@ print("your name would become:")
 print(called)
 
 seconds = age * 365 * 24 * 60 * 60
-print("\nYou're over", seconds, "seconds old.")
+print(f"\nYou're over {seconds} seconds old.")
 
 moon_weight = weight / 6
-print("\nDid you know that on the moon you would weigh only",
-      moon_weight, "pounds?")
+print(f"\nDid you know that on the moon you would weigh only {moon_weight} pounds?")
 
 sun_weight = weight * 27.1
-print("On the sun, you'd weigh", sun_weight, "(but, ah... not for long).")
+print(f"On the sun, you'd weigh {sun_weight}, (but, ah... not for long).")
 
-input("\n\nPress the enter key to exit.")

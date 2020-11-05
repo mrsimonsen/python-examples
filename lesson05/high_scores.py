@@ -52,4 +52,3 @@ while choice != "0":
     else:
         print("Sorry, but", choice, "isn't a valid choice.")
   
-input("\n\nPress the enter key to exit.")
