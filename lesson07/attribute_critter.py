@@ -9,11 +9,11 @@ class Critter(object):
 
     def __str__(self):
         rep = "Critter object\n"
-        rep += "name: " + self.name + "\n"
+        rep += f"name: {self.name}\n"
         return rep  
 
     def talk(self):
-        print("Hi.  I'm", self.name, "\n")
+        print(f"Hi.  I'm {self.name}\n")
 
 # main
 crit1 = Critter("Poochie")
@@ -28,4 +28,3 @@ print(crit1)
 print("Directly accessing crit1.name:")
 print(crit1.name)
 
-input("\n\nPress the enter key to exit.")

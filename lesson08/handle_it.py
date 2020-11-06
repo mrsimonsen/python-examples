@@ -17,16 +17,14 @@ except ValueError:
 print()
 for value in (None, "Hi!"):
     try:
-        print("Attempting to convert", value, "-->", end=" ")
-        print(float(value))
+        print("Attempting to convert {value} --> {float(value)}")
     except (TypeError, ValueError):
         print("Something went wrong!")
 
 print()
 for value in (None, "Hi!"):
     try:
-        print("Attempting to convert", value, "-->", end=" ")
-        print(float(value))
+        print("Attempting to convert {value} --> {float(value)}")
     except TypeError:
         print("I can only convert a string or a number!")
     except ValueError:
@@ -45,6 +43,5 @@ try:
 except ValueError:
     print("That was not a number!")
 else:
-    print("You entered the number", num)
+    print(f"You entered the number {num}")
 
-input("\n\nPress the enter key to exit.")

@@ -9,8 +9,8 @@ class Critter(object):
         self.__mood = mood          # private attribute
 
     def talk(self):
-        print("\nI'm", self.name)
-        print("Right now I feel", self.__mood, "\n")
+        print(f"\nI'm {self.name}")
+        print(f"Right now I feel {self.__mood}\n")
 
     def __private_method(self):
         print("This is a private method.")
@@ -24,4 +24,3 @@ crit = Critter(name = "Poochie", mood = "happy")
 crit.talk()
 crit.public_method()
 
-input("\n\nPress the enter key to exit.")

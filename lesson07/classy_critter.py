@@ -7,7 +7,7 @@ class Critter(object):
 
     @staticmethod   
     def status():
-        print("\nThe total number of critters is", Critter.total)
+        print(f"\nThe total number of critters is {Critter.total}")
         
     def __init__(self, name):
         print("A critter has been born!")
@@ -15,8 +15,7 @@ class Critter(object):
         Critter.total += 1
 
 #main
-print("Accessing the class attribute Critter.total:", end=" ")
-print(Critter.total)
+print(f"Accessing the class attribute Critter.total: {Critter.total}")
 
 print("\nCreating critters.")
 crit1 = Critter("critter 1")
@@ -25,7 +24,5 @@ crit3 = Critter("critter 3")
 
 Critter.status()
 
-print("\nAccessing the class attribute through an object:", end= " ")
-print(crit1.total)
+print(f"\nAccessing the class attribute through an object: {crit1.total}")
 
-input("\n\nPress the enter key to exit.")
