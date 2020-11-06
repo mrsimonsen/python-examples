@@ -16,4 +16,3 @@ crit2 = Critter()
 crit1.talk()
 crit2.talk()
 
-input("\n\nPress the enter key to exit.")

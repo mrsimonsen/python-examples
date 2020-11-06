@@ -27,6 +27,5 @@ games = int(input("Computer Games: "))
 
 total = car + rent + jet + gifts + food + staff + guru + games
 
-print("\nGrand Total:", total)
+print(f"\nGrand Total: {total}")
 
-input("\n\nPress the enter key to exit.")

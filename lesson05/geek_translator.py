@@ -35,9 +35,9 @@ while choice != "0":
         term = input("What term do you want me to translate?: ")
         if term in geek:
             definition = geek[term]
-            print("\n", term, "means", definition)
+            print(f"\n{term} means {definition}")
         else:
-            print("\nSorry, I don't know", term)
+            print(f"\nSorry, I don't know {term}")
 
     # add a term-definition pair
     elif choice == "2":
@@ -45,7 +45,7 @@ while choice != "0":
         if term not in geek:
             definition = input("\nWhat's the definition?: ")
             geek[term] = definition
-            print("\n", term, "has been added.")
+            print(f"\n{term} has been added.")
         else:
             print("\nThat term already exists!  Try redefining it.")
 
@@ -55,7 +55,7 @@ while choice != "0":
         if term in geek:
             definition = input("What's the new definition?: ")
             geek[term] = definition
-            print("\n", term, "has been redefined.")
+            print(f"\n{term} has been redefined.")
         else:
             print("\nThat term doesn't exist!  Try adding it.")
        
@@ -64,12 +64,11 @@ while choice != "0":
         term = input("What term do you want me to delete?: ")
         if term in geek:
             del geek[term]
-            print("\nOkay, I deleted", term)
+            print(f"\nOkay, I deleted {term}")
         else:
-            print("\nI can't do that!", term, "doesn't exist in the dictionary.")
+            print(f"\nI can't do that! {term} doesn't exist in the dictionary.")
             
     # some unknown choice
     else:
-        print("\nSorry, but", choice, "isn't a valid choice.")
-  
-input("\n\nPress the enter key to exit.")
+        print(f"\nSorry, but {choice} isn't a valid choice.")
+

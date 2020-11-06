@@ -8,8 +8,7 @@ def open_file(file_name, mode):
     try:
         the_file = open(file_name, mode)
     except IOError as e:
-        print("Unable to open the file", file_name, "Ending program.\n", e)
-        input("\n\nPress the enter key to exit.")
+        print(f"Unable to open the file {file_name} Ending program.\n{e}")
         sys.exit()
     else:
         return the_file
@@ -41,7 +40,7 @@ def next_block(the_file):
 def welcome(title):
     """Welcome the player and get his/her name."""
     print("\t\tWelcome to Trivia Challenge!\n")
-    print("\t\t", title, "\n")
+    print(f"\t\t{title}\n")
  
 def main():
     trivia_file = open_file("trivia.txt", "r")
@@ -59,7 +58,7 @@ def main():
             print("\t", i + 1, "-", answers[i])
 
         # get answer
-        answer = input("What's your answer?: ")
+        answer = input("What's your answer?:\n")
 
         # check answer
         if answer == correct:
@@ -68,7 +67,7 @@ def main():
         else:
             print("\nWrong.", end=" ")
         print(explanation)
-        print("Score:", score, "\n\n")
+        print(f"Score: {score}\n\n")
 
         # get next block
         category, question, answers, correct, explanation = next_block(trivia_file)
@@ -76,7 +75,8 @@ def main():
     trivia_file.close()
 
     print("That was the last question!")
-    print("You're final score is", score)
+    print(f"You're final score is {score}")
  
-main()  
-input("\n\nPress the enter key to exit.")
+ if __name__ == "__main__":
+	main()  
+

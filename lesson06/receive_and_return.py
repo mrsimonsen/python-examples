@@ -19,9 +19,8 @@ def ask_yes_no(question):
 display("Here's a message for you.\n")
 
 number = give_me_five()
-print("Here's what I got from give_me_five():", number)
+print(f"Here's what I got from give_me_five(): {number}")
 
 answer = ask_yes_no("\nPlease enter 'y' or 'n': ")
-print("Thanks for entering:", answer)
+print(f"Thanks for entering: {answer}")
 
-input("\n\nPress the enter key to exit.")

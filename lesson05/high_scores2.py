@@ -29,7 +29,7 @@ while choice != "0":
         print("NAME\tSCORE")
         for entry in scores:
             score, name = entry    
-            print(name, "\t", score)
+            print(f"{name}\t{score}")
 
     # add a score
     elif choice == "2":
@@ -42,6 +42,5 @@ while choice != "0":
 
     # some unknown choice
     else:
-        print("Sorry, but", choice, "isn't a valid choice.")
+        print(f"Sorry, but {choice} isn't a valid choice.")
   
-input("\n\nPress the enter key to exit.")

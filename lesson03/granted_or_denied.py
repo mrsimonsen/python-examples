@@ -11,4 +11,3 @@ if password == "secret":
 else:
     print("Access Denied")
 
-input("\n\nPress the enter key to exit.")

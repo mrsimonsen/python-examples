@@ -26,7 +26,7 @@ class Critter(object):
         return m
     
     def talk(self):
-        print("I'm", self.name, "and I feel", self.mood, "now.\n")
+        print(f"I'm {self.name} and I feel {self.mood} now.\n")
         self.__pass_time()
     
     def eat(self, food = 4):
@@ -45,7 +45,7 @@ class Critter(object):
 
 
 def main():
-    crit_name = input("What do you want to name your critter?: ")
+    crit_name = input("What do you want to name your critter?:\n")
     crit = Critter(crit_name)
 
     choice = None  
@@ -60,7 +60,7 @@ def main():
         3 - Play with your critter
         """)
     
-        choice = input("Choice: ")
+        choice = input("Choice:\n")
         print()
 
         # exit
@@ -81,7 +81,8 @@ def main():
 
         # some unknown choice
         else:
-            print("\nSorry, but", choice, "isn't a valid choice.")
+            print(f"\nSorry, but {choice} isn't a valid choice.")
 
-main()
-input("\n\nPress the enter key to exit.") 
+if __name__ == "__main__":
+	main()
+	

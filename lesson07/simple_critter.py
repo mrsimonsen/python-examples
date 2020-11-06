@@ -10,4 +10,3 @@ class Critter(object):
 crit = Critter()
 crit.talk()
 
-input("\n\nPress the enter key to exit.")

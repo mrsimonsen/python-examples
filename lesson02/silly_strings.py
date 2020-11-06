@@ -15,5 +15,5 @@ print("who doesn't like pie?  That's right, nobody.  But if you really")
 print("like it, you should say it like you mean it:")
 print("Pie" * 10)
 
-input("\n\nPress the enter key to exit.")
+
 

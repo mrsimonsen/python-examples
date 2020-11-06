@@ -9,4 +9,3 @@ password = input("Enter your password: ")
 if password == "secret":
     print("Access Granted")
 
-input("\n\nPress the enter key to exit.")

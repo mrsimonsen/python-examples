@@ -11,4 +11,3 @@ while response != "Because.":
 
 print("Oh.  Okay.")
 
-input("\n\nPress the enter key to exit.")

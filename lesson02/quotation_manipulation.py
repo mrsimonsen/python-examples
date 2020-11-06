@@ -22,4 +22,4 @@ print(quote.replace("five", "millions of"))
 print("\nOriginal quote is still:")
 print(quote)
 
-input("\n\nPress the enter key to exit.")
+
