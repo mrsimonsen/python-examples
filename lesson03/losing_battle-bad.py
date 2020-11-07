@@ -18,6 +18,3 @@ while health != 0:
 
 print(f"Your hero fought valiantly and defeated {trolls} trolls.")
 print("But alas, your hero is no more.")
-
-input("\n\nPress the enter key to exit.")
-
