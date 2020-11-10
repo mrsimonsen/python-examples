@@ -27,5 +27,3 @@ instructions()
 print("Here they are again:")
 instructions()
 print("You probably understand the game by now.")
-
-input("\n\nPress the enter key to exit.")
