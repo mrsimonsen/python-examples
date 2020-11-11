@@ -155,5 +155,5 @@ if wrong == MAX_WRONG:
 else:
     print("\nYou guessed it!")
     
-print("\nThe word was {word}")
+print(f"\nThe word was {word}")
 
