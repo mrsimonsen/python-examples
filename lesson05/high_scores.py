@@ -50,5 +50,5 @@ while choice != "0":
 
     # some unknown choice
     else:
-        print("Sorry, but", choice, "isn't a valid choice.")
+        print("Sorry, but {choice} isn't a valid choice.")
   
