@@ -75,7 +75,7 @@ def main():
     trivia_file.close()
 
     print("That was the last question!")
-    print(f"You're final score is {score}")
+    print(f"Your final score is {score}")
  
  if __name__ == "__main__":
 	main()  
