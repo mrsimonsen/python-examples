@@ -3,11 +3,11 @@
 
 # positional parameters
 def birthday1(name, age):
-    print(f"Happy birthday {name}! I hear you're {age} today.\n")
+	print(f"Happy birthday {name}! I hear you're {age} today.\n")
 
 # parameters with default values
 def birthday2(name = "Jackson", age = 1):
-    print(f"Happy birthday {name}! I hear you're {age} today.\n")
+	print(f"Happy birthday {name}! I hear you're {age} today.\n")
 
 
 birthday1("Jackson", 1)

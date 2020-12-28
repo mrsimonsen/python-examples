@@ -2,18 +2,18 @@
 # Demonstrates parameters and return values
 
 def display(message):
-    print(message)
+	print(message)
 
 def give_me_five():
-    five = 5
-    return five
+	five = 5
+	return five
 
 def ask_yes_no(question):
-    """Ask a yes or no question."""
-    response = None
-    while response not in ("y", "n"):
-        response = input(question).lower()
-    return response
+	"""Ask a yes or no question."""
+	response = None
+	while response not in ("y", "n"):
+		response = input(question).lower()
+	return response
 
 # main
 display("Here's a message for you.\n")

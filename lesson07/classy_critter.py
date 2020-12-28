@@ -2,17 +2,17 @@
 # Demonstrates class attributes and static methods
 
 class Critter(object):
-    """A virtual pet"""
-    total = 0
+	"""A virtual pet"""
+	total = 0
 
-    @staticmethod   
-    def status():
-        print(f"\nThe total number of critters is {Critter.total}")
+	@staticmethod   
+	def status():
+		print(f"\nThe total number of critters is {Critter.total}")
         
-    def __init__(self, name):
-        print("A critter has been born!")
-        self.name = name
-        Critter.total += 1
+	def __init__(self, name):
+		print("A critter has been born!")
+		self.name = name
+		Critter.total += 1
 
 #main
 print(f"Accessing the class attribute Critter.total: {Critter.total}")

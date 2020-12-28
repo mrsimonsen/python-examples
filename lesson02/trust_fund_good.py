@@ -3,7 +3,7 @@
 
 print(
 """
-                       Trust Fund Buddy
+											Trust Fund Buddy
 
 Totals your monthly spending so that your trust fund doesn't run out
 (and you're forced to get a real job).

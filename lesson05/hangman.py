@@ -10,99 +10,99 @@ import random
 # constants
 HANGMAN = (
 """
- ------
- |    |
- |
- |
- |
- |
- |
- |
- |
+------
+|    |
+|
+|
+|
+|
+|
+|
+|
 ----------
 """,
 """
- ------
- |    |
- |    O
- |
- |
- |
- |
- |
- |
+------
+|    |
+|    O
+|
+|
+|
+|
+|
+|
 ----------
 """,
 """
- ------
- |    |
- |    O
- |   -+-
- | 
- |   
- |   
- |   
- |   
+------
+|    |
+|    O
+|   -+-
+| 
+|   
+|   
+|   
+|   
 ----------
 """,
 """
- ------
- |    |
- |    O
- |  /-+-
- |   
- |   
- |   
- |   
- |   
+------
+|    |
+|    O
+|  /-+-
+|   
+|   
+|   
+|   
+|   
 ----------
 """,
 """
- ------
- |    |
- |    O
- |  /-+-/
- |   
- |   
- |   
- |   
- |   
+------
+|    |
+|    O
+|  /-+-/
+|   
+|   
+|   
+|   
+|   
 ----------
 """,
 """
- ------
- |    |
- |    O
- |  /-+-/
- |    |
- |   
- |   
- |   
- |   
+------
+|    |
+|    O
+|  /-+-/
+|    |
+|   
+|   
+|   
+|   
 ----------
 """,
 """
- ------
- |    |
- |    O
- |  /-+-/
- |    |
- |    |
- |   | 
- |   | 
- |   
+------
+|    |
+|    O
+|  /-+-/
+|    |
+|    |
+|   | 
+|   | 
+|   
 ----------
 """,
 """
- ------
- |    |
- |    O
- |  /-+-/
- |    |
- |    |
- |   | |
- |   | |
- |  
+------
+|    |
+|    O
+|  /-+-/
+|    |
+|    |
+|   | |
+|   | |
+|  
 ----------
 """)
 
@@ -119,41 +119,41 @@ used = []                     # letters already guessed
 print("Welcome to Hangman.  Good luck!")
 
 while wrong < MAX_WRONG and so_far != word:
-    print(HANGMAN[wrong])
-    print(f"\nYou've used the following letters:\n{used}")
-    print(f"\nSo far, the word is:\n{so_far}")
+	print(HANGMAN[wrong])
+	print(f"\nYou've used the following letters:\n{used}")
+	print(f"\nSo far, the word is:\n{so_far}")
 
-    guess = input("\n\nEnter your guess: ")
-    guess = guess.upper()
-    
-    while guess in used:
-        print(f"You've already guessed the letter {guess}")
-        guess = input("Enter your guess: ")
-        guess = guess.upper()
+	guess = input("\n\nEnter your guess: ")
+	guess = guess.upper()
+		
+	while guess in used:
+		print(f"You've already guessed the letter {guess}")
+		guess = input("Enter your guess: ")
+		guess = guess.upper()
 
-    used.append(guess)
+	used.append(guess)
 
-    if guess in word:
-        print(f"\nYes! {guess} is in the word!")
+	if guess in word:
+		print(f"\nYes! {guess} is in the word!")
 
-        # create a new so_far to include guess
-        new = ""
-        for i in range(len(word)):
-            if guess == word[i]:
-                new += guess
-            else:
-                new += so_far[i]              
-        so_far = new
+		# create a new so_far to include guess
+		new = ""
+		for i in range(len(word)):
+			if guess == word[i]:
+				new += guess
+			else:
+				new += so_far[i]              
+		so_far = new
 
-    else:
-        print(f"\nSorry, {guess} isn't in the word.")
-        wrong += 1
+	else:
+		print(f"\nSorry, {guess} isn't in the word.")
+		wrong += 1
 
 if wrong == MAX_WRONG:
-    print(HANGMAN[wrong])
-    print("\nYou've been hanged!")
+	print(HANGMAN[wrong])
+	print("\nYou've been hanged!")
 else:
-    print("\nYou guessed it!")
-    
+	print("\nYou guessed it!")
+		
 print(f"\nThe word was {word}")
 

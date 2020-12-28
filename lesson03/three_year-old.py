@@ -7,7 +7,7 @@ print("Try to stop the madness.\n")
 
 response = ""
 while response != "Because.":
-    response = input("Why?\n")
+	response = input("Why?\n")
 
 print("Oh.  Okay.")
 

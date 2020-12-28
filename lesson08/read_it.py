@@ -36,12 +36,12 @@ lines = text_file.readlines()
 print(lines) 
 print(len(lines))
 for line in lines:
-    print(line)
+	print(line)
 text_file.close()
 
 print("\nLooping through the file, line by line.")
 text_file = open("read_it.txt", "r")
 for line in text_file:
-    print(line)
+	print(line)
 text_file.close()
 

@@ -3,12 +3,12 @@
 
 # create a tuple with some items and display with a for loop
 inventory = ("sword",
-             "armor",
-             "shield",
-             "healing potion")
+						"armor",
+						"shield",
+						"healing potion")
 print("Your items:")
 for item in inventory:
-    print(item)
+	print(item)
 
 input("\nPress the enter key to continue.")
 
@@ -19,7 +19,7 @@ input("\nPress the enter key to continue.")
 
 # test for membership with in
 if "healing potion" in inventory:
-    print("You will live to fight another day.")
+	print("You will live to fight another day.")
 
 # display one item through an index
 index = int(input("\nEnter the index number for an item in inventory: "))

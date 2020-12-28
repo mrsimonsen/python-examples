@@ -2,15 +2,19 @@
 # Demonstrates the range() function
 
 print("Counting:")
+count = ''
 for i in range(10):
-    print(i, end=" ") #changes the ending character of print() from '\n' to ' '
+	count += f"{i} "
+print(count)
 
 print("\n\nCounting by fives:")
+count = ''
 for i in range(0, 50, 5):
-    print(i, end=" ")
+	count += f"{i} "
+print(count)
 
 print("\n\nCounting backwards:")
+count = ''
 for i in range(10, 0, -1):
-    print(i, end=" ")
-
-
+	count += f"{i} "
+print(count)

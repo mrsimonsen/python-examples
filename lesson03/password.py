@@ -7,5 +7,5 @@ print("-- where security is our middle name\n")
 password = input("Enter your password: ")
 
 if password == "secret":
-    print("Access Granted")
+	print("Access Granted")
 

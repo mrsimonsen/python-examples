@@ -10,11 +10,11 @@ trolls = 0
 damage = 3
 
 while health != 0:
-    trolls += 1
-    health -= damage
-    
-    print("Your hero swings and defeats an evil troll, " \
-          f"but takes {damage} damage points.\n")
+	trolls += 1
+	health -= damage
+	
+	print("Your hero swings and defeats an evil troll, " \
+				f"but takes {damage} damage points.\n")
 
 print(f"Your hero fought valiantly and defeated {trolls} trolls.")
 print("But alas, your hero is no more.")

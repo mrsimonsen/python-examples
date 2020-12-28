@@ -2,18 +2,18 @@
 # Demonstrates creating and accessing object attributes
 
 class Critter(object):
-    """A virtual pet"""
-    def __init__(self, name):
-        print("A new critter has been born!")
-        self.name = name
+	"""A virtual pet"""
+	def __init__(self, name):
+		print("A new critter has been born!")
+		self.name = name
 
-    def __str__(self):
-        rep = "Critter object\n"
-        rep += f"name: {self.name}\n"
-        return rep  
+	def __str__(self):
+		rep = "Critter object\n"
+		rep += f"name: {self.name}\n"
+		return rep  
 
-    def talk(self):
-        print(f"Hi.  I'm {self.name}\n")
+	def talk(self):
+		print(f"Hi.  I'm {self.name}\n")
 
 # main
 crit1 = Critter("Poochie")
