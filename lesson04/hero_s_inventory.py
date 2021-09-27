@@ -12,9 +12,9 @@ input("\nPress the enter key to continue.")
 
 # create a tuple with some items
 inventory = ("sword",
-						"armor",
-						"shield",
-						"healing potion")
+			"armor",
+			"shield",
+			"healing potion")
 
 # print the tuple
 print("\nThe tuple inventory is:")
@@ -24,4 +24,3 @@ print(inventory)
 print("\nYour items:")
 for item in inventory:
 	print(item)
-
