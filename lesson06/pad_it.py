@@ -10,6 +10,8 @@ print("\nPadding with spaces:")
 for i in range(1,11):
     print(f"The number is {i:4}")
 
-print("\nJustify with spaces:")
+print("\nJustifying with spaces:")
 for i in range(6):
-    print(f"{"python"[i:]:>6}")
+    print(f"{i}{'python'[i:]:>6}")
+for i in range(6):
+    print(f"{'python'[i:]:<6}{i}")
