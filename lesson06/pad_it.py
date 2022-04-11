@@ -1,17 +1,30 @@
-from math import pi
-print("\nPadding decimal places:")
-print(f"The value of pi is {pi:.4f}")
+num = 303
+flt = 12.34
+str = "Formatting"
 
-print("Padding with leading 0s:")
-for i in range(1,11):
-    print(f"The number is {i:02}")
+#Formatting Integers
+#width
+print(f"Value: {num:7}")
+#flags
+print(f"{num:+}")
+print(f"{num:08}")
+print(f"{num:+08}")
 
-print("\nPadding with spaces:")
-for i in range(1,11):
-    print(f"The number is {i:4}")
+#Formatting Floating-point Numbers
+#width
+print(f"Value: {flt:10.2f}")
+print(f"Value: {flt:10.2}")
+#percision
+print(f"{flt:.4}")
+print(f"{flt:.0f}")
+print(f"{flt:.4e}")
+#flags
+print(f"{flt:07.2f}")
 
-print("\nJustifying with spaces:")
-for i in range(6):
-    print(f"{i}{'python'[i:]:>6}")
-for i in range(6):
-    print(f"{'python'[i:]:<6}{i}")
+#Formatting Strings
+#width
+print(f"{str:20} String")
+#percision
+print(f"{str:.6} String")
+#flags
+print(f"{str:>20} String")
