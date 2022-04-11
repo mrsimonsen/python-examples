@@ -5,6 +5,7 @@ str = "Formatting"
 #Formatting Integers
 #width
 print(f"Value: {num:7}")
+print(f"Value: {num:1}")
 #flags
 print(f"{num:+}")
 print(f"{num:08}")
