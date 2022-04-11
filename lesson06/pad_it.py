@@ -15,7 +15,7 @@ print(f"{num:+08}")
 #width
 print(f"Value: {flt:10.2f}")
 print(f"Value: {flt:10.2}")
-#percision
+#precision
 print(f"{flt:.4}")
 print(f"{flt:.0f}")
 print(f"{flt:.4e}")
@@ -25,7 +25,7 @@ print(f"{flt:07.2f}")
 #Formatting Strings
 #width
 print(f"{str:20} String")
-#percision
+#precision
 print(f"{str:.6} String")
 #flags
 print(f"{str:>20} String")
