@@ -15,11 +15,13 @@ print(quote.lower())
 
 print("\nAs a title:")
 print(quote.title())
+print(f'\nSwapcase: {quote.title().swapcase()}')
 
 print("\nWith a minor replacement:")
 print(quote.replace("five", "millions of"))
 
 print("\nOriginal quote is still:")
 print(quote)
+
 
 
