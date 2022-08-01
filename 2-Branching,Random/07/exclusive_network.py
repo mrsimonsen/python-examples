@@ -6,13 +6,8 @@ print("\t\tMembers only!\n")
 
 security = 0
 
-username = ""
-while not username:
-	username = input("Username: ")
-
-password = ""
-while not password:
-	password = input("Password: ")
+username = input("Username: ")
+password = input("Password: ")
 
 if username == "M.Dawson" and password == "secret":
 	print("Hi, Mike.")
