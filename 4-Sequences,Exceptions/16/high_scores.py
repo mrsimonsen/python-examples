@@ -1,7 +1,7 @@
 # High Scores
 # Demonstrates list methods
 
-scores = []
+scores = [6,10,4]
 
 choice = None
 while choice != "0":
@@ -15,6 +15,8 @@ while choice != "0":
 	2 - Add a Score
 	3 - Remove a Score 
 	4 - Sort Scores
+	5 - Top Score
+	6 - Total points earned
 	"""
 	)
 	
@@ -47,8 +49,15 @@ while choice != "0":
 	# sort scores
 	elif choice == "4":
 		scores.sort(reverse=True)
+		print("Scores have been sorted")
+	
+	elif choice == "5":
+		print(f"Top score: {max(scores)}")
+
+	elif choice == "6":
+		print(f"Total points earned: {sum(scores)}")
 
 	# some unknown choice
 	else:
-		print("Sorry, but {choice} isn't a valid choice.")
+		print(f"Sorry, but {choice} isn't a valid choice.")
 	
