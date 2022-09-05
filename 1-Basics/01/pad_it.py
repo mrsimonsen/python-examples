@@ -1,3 +1,4 @@
+#Demonstrates f-string formatting with width, precision, padding, conversions, and alignment
 num = 303
 flt = 12.34
 str = "Formatting"

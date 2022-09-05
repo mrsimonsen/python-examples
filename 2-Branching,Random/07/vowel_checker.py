@@ -1,3 +1,4 @@
+#Demonstrates a large compound condition
 message = input("Enter a message:\n").lower()
 
 if 'a' not in message and 'e' not in message and 'i' not in message and 'o' not in message and 'u' not in message:
