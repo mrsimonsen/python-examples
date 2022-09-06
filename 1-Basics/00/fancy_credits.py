@@ -9,5 +9,5 @@ print("\t\t\tMichael Dawson")
 print("\t\t\t \\ \\ \\ \\ \\ \\ \\")
 
 print("\nSpecial thanks goes out to:")
-print("My hair stylist, Henry \'The Great,\' who never says \"can\'t.\"")
+print("My hair stylist, Henry \'The Great\', who never says \"can\'t.\"")
 
