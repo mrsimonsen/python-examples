@@ -33,11 +33,13 @@ Geek Translator
 	# get a definition
 	elif choice == "1":
 		term = input("What term do you want me to translate?: ")
-		if term in geek:
-			definition = geek[term]
-			print(f"\n{term} means {definition}")
-		else:
-			print(f"\nSorry, I don't know {term}")
+		print(geek.get(term,f"\nSorry, I don't know {term}"))
+		#same as:
+		#if term in geek:
+		#	definition = geek[term]
+		#	print(f"\n{term} means {definition}")
+		#else:
+		#	print(f"\nSorry, I don't know {term}")
 
 	# add a term-definition pair
 	elif choice == "2":
