@@ -9,6 +9,8 @@ print(f"Value: {num:7}")
 print(f"Value: {num:1}")
 #types
 print(f"{num:+}")
+print(f"{-405:+}")
+
 print(f"{num:08}")
 print(f"{num:+08}")
 print(f"{num:b}")
@@ -20,6 +22,7 @@ print(f"Value: {flt:10.2f}")
 print(f"Value: {flt:10.2}")
 #precision
 print(f"{flt:.4}")
+print(f"{12.36:.1f}")
 print(f"{flt:.1}")
 #types
 print(f"{flt:.0f}")
