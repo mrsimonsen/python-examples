@@ -1,6 +1,6 @@
 #Demonstrates f-string formatting with width, precision, padding, conversions, and alignment
 num = 303
-flt = 12.34
+flt = 12.35
 str = "Formatting"
 
 #Formatting Integers
@@ -20,6 +20,7 @@ print(f"Value: {flt:10.2f}")
 print(f"Value: {flt:10.2}")
 #precision
 print(f"{flt:.4}")
+print(f"{flt:.1}")
 #types
 print(f"{flt:.0f}")
 print(f"{flt:.4e}")
