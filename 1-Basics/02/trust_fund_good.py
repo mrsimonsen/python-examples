@@ -27,5 +27,5 @@ games = int(input("Computer Games: "))
 
 total = car + rent + jet + gifts + food + staff + guru + games
 
-print(f"\nGrand Total: {total}")
+print(f"\nGrand Total: {float(total)}")
 
