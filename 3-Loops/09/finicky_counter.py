@@ -3,7 +3,7 @@
 
 for i in '1234567890ABC':
 	count = int(i)
-	# end loop if count greater than 10
+	# end loop if count less than 1
 	if count < 1:
 		break
 	# skip 5
