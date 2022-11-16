@@ -5,16 +5,16 @@ print("Your lone hero is surrounded by a massive army of trolls.")
 print("Their decaying green bodies stretch out, melting into the horizon.")
 print("Your hero unsheathes his sword for the last fight of his life.\n")
 
-health = 10
+health = 100000000000
 trolls = 0
 damage = 3
 
 while health > 0:
-    trolls += 1
-    health -= damage
-    
-    print("Your hero swings and defeats an evil troll, " \
-          f"but takes {damage} damage points.\n")
+	trolls += 1
+	health -= damage
+
+	print("Your hero swings and defeats an evil troll, " \
+			f"but takes {damage} damage points.\n")
 
 print(f"Your hero fought valiantly and defeated {trolls} trolls.")
 print("But alas, your hero is no more.")
