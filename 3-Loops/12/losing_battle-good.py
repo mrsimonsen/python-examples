@@ -5,7 +5,7 @@ print("Your lone hero is surrounded by a massive army of trolls.")
 print("Their decaying green bodies stretch out, melting into the horizon.")
 print("Your hero unsheathes his sword for the last fight of his life.\n")
 
-health = 100000000000
+health = 10
 trolls = 0
 damage = 3
 
