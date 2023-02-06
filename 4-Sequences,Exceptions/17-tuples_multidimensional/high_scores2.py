@@ -28,7 +28,7 @@ while choice != "0":
 		print("High Scores\n")
 		print("NAME\tSCORE")
 		for entry in scores:
-			score, name = entry    
+			score, name = entry
 			print(f"{name}\t{score}")
 
 	# add a score
