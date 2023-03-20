@@ -1,6 +1,6 @@
 #Demonstrates inheritance and polymorphism
 
-class Critter():
+class Critter(object):
 	pets = []
 	def __init__(self, name):
 		self.name = name

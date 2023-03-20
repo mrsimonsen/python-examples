@@ -1,7 +1,7 @@
 # Attribute Critter
 # Demonstrates creating and accessing object attributes
 
-class Critter(object):
+class Critter():
 	"""A virtual pet"""
 	def __init__(self, name):
 		print("A new critter has been born!")

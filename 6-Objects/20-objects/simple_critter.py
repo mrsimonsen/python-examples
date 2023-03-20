@@ -1,7 +1,7 @@
 # Simple Critter
 # Demonstrates a basic class and object 
 
-class Critter(object):
+class Critter():
 	"""A virtual pet"""
 	def talk(self):
 		print("Hi.  I'm an instance of class Critter.")
